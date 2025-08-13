@@ -8,19 +8,24 @@
 .main {
   width: 100%;
   height: 100vh;
-  background: #8a29a6;
+  background: #3e0e4e;
+  background: linear-gradient(
+    26deg,
+    rgba(62, 14, 78, 1) 0%,
+    rgba(138, 41, 166, 1) 52%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .card {
-  background: #1e1033;
+  background: #242139;
   color: white;
   text-align: center;
   border-radius: 20px;
-  padding: 20px;
   width: 350px;
+  padding: 20px 0 0 0;
 }
 
 .card h3 {
@@ -28,8 +33,8 @@
 }
 
 .profile-pic img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   border: 3px solid #9d00ff;
 }
@@ -60,31 +65,49 @@
   cursor: pointer;
 }
 
+.message:hover {
+  background: transparent;
+  border: 1px solid #b026ff;
+}
 .follow {
   background: transparent;
   border: 1px solid #b026ff;
-  color: #b026ff;
+  color: white;
+
   padding: 8px 15px;
   border-radius: 8px;
   cursor: pointer;
 }
 
+.follow:hover {
+  background: #b026ff;
+  color: white;
+}
 .skills {
+  background: #1f1c34;
+  padding: 25px;
   margin-top: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .skills ul {
   list-style: none;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  justify-content: center;
+}
+
+.skills p {
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 10px;
 }
 
 .skills li {
-  background: #2a1b3d;
+  background: transparent;
+  border: 1px solid #8a29a6;
   padding: 5px 10px;
   border-radius: 6px;
-  font-size: 0.8rem;
+  font-size: 12px;
 }
